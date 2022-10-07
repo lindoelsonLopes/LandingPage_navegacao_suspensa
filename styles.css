@@ -1,13 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: rgb(240, 248, 248);
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-nav {
-  display: flex;
-}
-
-li {
+.menu ul {
   list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;  
+}
+
+.user {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.menu ul li:hover ul {
+  display: block;  
+}
+
+.menu ul ul li a {
+  display: block;
 }
