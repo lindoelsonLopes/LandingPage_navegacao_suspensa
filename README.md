@@ -1,4 +1,4 @@
-0# Frontend Mentor - Seção de introdução com navegação suspensa
+# Frontend Mentor - Seção de introdução com navegação suspensa
 
 ![Visualização do design para a seção de introdução com desafio de codificação de navegação suspensa](./images/desktop-preview.jpg)
 
@@ -6,7 +6,7 @@
 
 Obrigado por conferir este desafio de codificação de front-end.
 
-## O Desáfio
+## O Desafio
 
 Construção de uma seção de introdução com navegação suspensa, onde o usuário será capaz de:
 
