@@ -10,6 +10,7 @@ body {
 .wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
 }
 
@@ -50,7 +51,22 @@ header {
   box-shadow: 00 3px rgba(0,0,0,0.1);
 }
 
+.options-company {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 00 3px rgba(0,0,0,0.1);
+}
+
 .options .option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.options-company .option {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -61,28 +77,34 @@ header {
   gap: 1.5rem;
 }
 
-.menu ul ul {
-  display: none;
-  left: -50px;
+.menu .options {
+  display: block;
+  left: -60px;
   position: absolute;
 }
 
-.menu ul li:hover ul {
-  display: block;  
+.menu .options-company {
+  display: block;
+  left: -20px;
+  position: absolute;
 }
 
-.menu ul ul li a {
-  display: block;
+.select-btn.active .options {
+  display: none;
+}
+
+.select-btn-company.active .options-company {
+  display: none;
 }
 
 .btn-login {
-  background-color: white;
+  background: rgb(248, 244, 244);
   border: none;
   cursor: pointer;
 }
 
 .btn-register {
-  background-color: white;
+  background: rgb(248, 244, 244);
   border-radius: 10px;
   padding: 8px 15px;
   cursor: pointer;  
