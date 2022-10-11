@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+body {
+  background: rgb(248, 244, 244);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
 .logo {
   font-size: 3rem;
   font-weight: 700;
@@ -12,6 +22,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .menu ul {
@@ -22,6 +33,7 @@ header {
   display: inline;
   margin: 1rem;
   position: relative;
+  
 }
 
 .menu ul li a {
@@ -29,14 +41,29 @@ header {
   display: inline-block;  
 }
 
-.user {
+.options {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 00 3px rgba(0,0,0,0.1);
+}
+
+.options .option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.users {
   display: flex;
   gap: 1.5rem;
 }
 
 .menu ul ul {
   display: none;
-  left: 0;
+  left: -50px;
   position: absolute;
 }
 
