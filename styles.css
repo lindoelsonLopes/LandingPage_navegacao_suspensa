@@ -8,12 +8,12 @@ body {
   font-family: 'Epilogue', sans-serif;  
 }
 
-header {
+.header-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 80px;
-  width: 100%;
+  width: 100vw;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -21,6 +21,13 @@ header {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+  margin-left: 30px;
+}
+
+.users {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 30px;
 }
 
 .logo {  
@@ -73,11 +80,6 @@ header {
 .options-company .option {
   display: flex;
   align-items: center;
-}
-
-.users {
-  display: flex;
-  gap: 1.5rem;
 }
 
 .menu .options {
@@ -141,10 +143,35 @@ main {
   margin-top: 50px;
 }
 
-aside {
+.aside-container {
   width: 600px;
+}
+
+.aside-container h1 {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+
+.aside-container p {
+  color: gray;
+  font-size: 22px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.aside-container button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100px;
 }
 
 .img-article img {
   width: 350px;
+  margin-right: 70px;
 }
