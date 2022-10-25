@@ -81,23 +81,41 @@ header {
 }
 
 .menu .options {
-  display: block;
+  display: none;
   left: -60px;
   position: absolute;
 }
 
 .menu .options-company {
-  display: block;
+  display: none;
   left: 0;
   position: absolute;
 }
 
 .select-btn.active .options {
-  display: none;
+  display: block;
 }
 
 .select-btn-company.active .options-company {
-  display: none;
+  display: block;
+}
+
+.select-btn i {
+  transition: 0.5s;
+}
+
+.select-btn.active i {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+}
+
+.select-btn-company i {
+  transition: 0.5s;
+}
+
+.select-btn-company.active i {
+  transform: rotate(-180deg);
+  transition: 0.5s;
 }
 
 .btn-login {
@@ -115,4 +133,18 @@ header {
   cursor: pointer;
   font-size: 18px;
   font-family: 'Epilogue', sans-serif;  
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+aside {
+  width: 600px;
+}
+
+.img-article img {
+  width: 350px;
 }
